@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Hind+Siliguri:wght@500&family=Lateef&family=Orbitron&family=Poppins:wght@500&display=swap');
 header {
+    font-family: 'Poppins', sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 20px;
 
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.home{
+    margin: 100px 20px;
 }
 .cityTour{
     display: flex;
@@ -24,4 +32,80 @@ header {
 .cityTour >div >div:hover {
     transform: scale(1.01);
     transition: all 500ms ease;
+}
+.cardFeature{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardFeature:hover{
+    transform: scale(1.01);
+    transition: all 500ms ease;
+}
+.cardFeature img{
+    width: 100%;
+    background-color: rgb(235, 238, 240) ;
+}
+.cardBody{
+    text-align: left;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    background-color:rgb(235, 238, 240);
+}
+
+
+
+footer {
+    margin: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+footer >div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer >p{
+    text-align: center;
+}
+.subscribe input {
+    height: 50px;
+    border: none;
+}
+.subscribe {
+    display: flex;
+    align-items: center;
+}
+.subscribe input[type=email]{
+    border-radius: 10px 0 0 10px;
+    background-color: rgb(197, 197, 197);
+    width: 250px;
+    padding: 10px;
+    font-size: 23px;
+}
+.subscribe input[type=submit]{
+    background-color: red;
+    border-radius: 0 10px 10px 0;
+    color: white;
+    font-size: 20px;
+
+}
+
+
+
+.social ul{
+    list-style: none;
+    display: flex;
+}
+.social ul li a{
+    text-decoration: none;
+    font-size: 40px;
+    color: grey;
+    padding: 10px;
+    font-family: loto;
+}
+.social ul li a:hover {
+   
+    color: blue;
 }

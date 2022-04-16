@@ -6,7 +6,7 @@ import './Header.css'
 const Header = () => {
     return (
         <div style={{fontSize:"30px"}}>
-            <Navbar bg="white" expand="lg" >
+            <Navbar bg="white" expand="lg" fixed="top">
                 <Container>
                     <Navbar.Brand as={Link} to="/home"><img src={logo} alt="" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -22,7 +22,6 @@ const Header = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-
             
         </div>
 

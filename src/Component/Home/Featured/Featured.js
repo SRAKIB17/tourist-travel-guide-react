@@ -21,7 +21,7 @@ const Featured = () => {
                 </div>
             </div>
             <h2>Featured Listings</h2>
-            <div>
+            <div className='row m-4 p-4'> 
                 {features.map(feature=><Feature feature={feature}/>)}
             </div>
         </div>
