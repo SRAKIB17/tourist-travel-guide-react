@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Feature = ({feature:{image, name, number, address, rating}}) => {
-    console.log(image)
+    const img = require.
     return (
         <div>
             
@@ -9,4 +9,4 @@ const Feature = ({feature:{image, name, number, address, rating}}) => {
     );
 };
 
-export default Feature;
+export default Feature; 
