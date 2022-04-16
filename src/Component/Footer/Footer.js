@@ -20,7 +20,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <p>© 2020 Ecata City Portal - All rights reserved.</p>
+            <p style={{color:'gray'}}>© 2020 Ecata City Portal - All rights reserved.</p>
         </footer>
     );
 };
