@@ -3,4 +3,25 @@ header {
     align-items: center;
     justify-content: space-between;
     margin: 20px;
+
+}
+.cityTour{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cityTour h2{
+   margin-bottom: 10px;
+   margin-top: 0px;
+}
+.cityTour >div{
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.cityTour >div >div:hover {
+    transform: scale(1.01);
+    transition: all 500ms ease;
 }
