@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import useJsonData from '../../../hooks/useLoadJson';
 import Feature from './Feature';
 
 const Featured = () => {
-    const [features, setFeatures] = useState([])
+    const features = useJsonData('/feature.json')
     
-    useEffect(()=>{
-        fetch('/feature.json')
-        .then(res=>res.json())
-        .then(data=>setFeatures(data))
-    },[])
     return (
         <div style={{textAlign:'center'}}>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '10px 0 0 0' }}>
@@ -28,4 +24,4 @@ const Featured = () => {
     );
 };
 
-export default Featured;
+export default Featured; 

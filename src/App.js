@@ -9,6 +9,7 @@ import Register from './Component/Pages/Register/Register';
 import Login from './Component/Pages/Login/Login';
 import NotFound from './Component/Pages/NotFound/NotFound';
 import Footer from './Component/Footer/Footer';
+import JoinTour from './Component/Pages/JoinTour/JoinTour';
 
 function App() {
   return (
@@ -18,9 +19,10 @@ function App() {
         <Route path='/' element={<Home></Home>}/>
         <Route path='/home' element={<Home></Home>}/>
         {/* <Route path='/blog' element={<Blog></Blog>}/> */}
-        <Route path='/about' element={<About></About>}/>
-        <Route path='/login' element={<Login></Login>}/>
-        <Route path='/register' element={<Register></Register>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/register' element={<Register/>}/>
+        <Route path='/join/:id' element={<JoinTour/>}/>
         <Route path='*' element={<NotFound> </NotFound>}/>
       </Routes>
       <Footer></Footer>

@@ -20,8 +20,8 @@ function CarouselImg() {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>BEST SERVICE instantly</h3>
+            <p>Good customer service typically providing timely.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -32,8 +32,8 @@ function CarouselImg() {
           />
   
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Sevice give customer timely</h3>
+            <p>car pickup and journy start instantly by time</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -44,9 +44,9 @@ function CarouselImg() {
           />
   
           <Carousel.Caption>
-            <h3>Third slide label</h3>
+            <h3>Checking And Providing Service Online</h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              Service ..take most prority so that customer will happy alltime 
             </p>
           </Carousel.Caption>
         </Carousel.Item>
