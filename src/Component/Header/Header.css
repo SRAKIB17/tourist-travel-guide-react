@@ -128,7 +128,21 @@ body{
     background-color: rgb(163, 235, 163);
     border: 1px solid green;
 }
-
+/* for blog question  */
+.blogq-1, .blogq-2, .blogq-3 {
+    border-radius: 10px;
+    background-color: rgb(206, 248, 248);
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.blogq-2 {
+    background-color: rgb(216, 240, 240);
+}
+.blogq-3 {
+    background-color: rgb(209, 234, 234);
+}
 
 footer {
     margin: 50px;
@@ -155,6 +169,7 @@ footer >p{
     width: 250px;
     padding: 10px;
     font-size: 23px;
+    background-color: rgb(227, 238, 238);
 }
 .subscribe input[type=submit]{
     background-color: red;

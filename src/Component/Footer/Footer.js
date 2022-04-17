@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { Facebook, Instagram, Twitter } from 'react-bootstrap-icons';
 
 const Footer = () => {
     return (
@@ -10,12 +11,12 @@ const Footer = () => {
                     <input type="submit" value="SUBSCRIBE" />
                 </div>
                 <div>
-                    <h2>Connect Socially</h2>
+                    <h4>Connect Socially</h4>
                     <div className='social'>
                         <ul>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#"><Twitter/></a></li>
+                            <li><a href="#"><Facebook/></a></li>
+                            <li><a href="#"><Instagram/></a></li>
                         </ul>
                     </div>
                 </div>
