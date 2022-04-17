@@ -180,7 +180,6 @@ footer >p{
 }
 
 
-
 .social ul{
     list-style: none;
     display: flex;
@@ -194,5 +193,5 @@ footer >p{
 }
 .social ul li a:hover {
    
-    color: blue;
+    color:  rgb(11, 189, 248);
 }
