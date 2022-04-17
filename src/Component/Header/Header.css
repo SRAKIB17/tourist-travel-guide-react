@@ -162,7 +162,7 @@ body{
     .appLogo{
         position: absolute;
         z-index: 20;
-        top: 150px;
+        top: 120px;
         left: 70px;
         right: 4px;
     }
