@@ -45,9 +45,9 @@ const About = () => {
                 <div className='h4 '>
                     <ul>
                         <li>1. learning C, Cpp and Python(Django) [I already know Basic Fundamental and also know intermidiate some ...</li>
-                        <li>2. After Ending progamming hero course and i will take a big project for practice</li>
+                        <li>2. After Ending progamming hero course and i will take a big project for practice and bussiness</li>
                         <li>3. These I will complete beside my study</li>
-                        <li>4. Four yearse after I will consist a my IT company (Insallah)</li>
+                        <li>4. Four yearse after I will consist a my IT company (Insallah) [Dream]</li>
                         <li>5. Finaly I will buy a car(Its my dream)..</li>
                     </ul>
                 </div>

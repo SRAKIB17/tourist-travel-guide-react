@@ -36,10 +36,11 @@
     text-decoration: none;
 
 }
-button:hover {
+.Profile-container button:hover {
     background-color: rgb(11, 165, 216);
 
 }
+.
 .Explore{
     font-family: 'Poppins', sans-serif;
     text-align: justify;
@@ -49,6 +50,10 @@ button:hover {
     margin-left: 15px;
 }
 .Goals{
+
     margin: 20px;
     font-family: 'Poppins', sans-serif;
+}
+.Goals ul{
+    list-style: none;
 }
