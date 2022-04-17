@@ -10,6 +10,7 @@ import Login from './Component/Pages/Login/Login';
 import NotFound from './Component/Pages/NotFound/NotFound';
 import Footer from './Component/Footer/Footer';
 import JoinTour from './Component/Pages/JoinTour/JoinTour';
+import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
-        <Route path='/join/:id' element={<JoinTour/>}/>
+        <Route path='/join/:id' element={<PrivateRoute><JoinTour/></PrivateRoute>}/>
         <Route path='*' element={<NotFound> </NotFound>}/>
       </Routes>
       <Footer></Footer>
