@@ -1,8 +1,11 @@
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate, useParams } from 'react-router-dom';
+import auth from '../../../firebase.init';
 import useJsonData from '../../../hooks/useLoadJson';
+import Loading from '../Loading/Loading';
 
 const JoinTour = () => {
     const { id } = useParams()
@@ -35,7 +38,10 @@ const JoinTour = () => {
 
     }
 
-
+    const [user, loading, error] = useAuthState(auth);
+    if(loading){
+        return <Loading></Loading>
+    }
 
 
     return (

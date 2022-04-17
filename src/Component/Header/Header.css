@@ -79,6 +79,56 @@ body{
     margin: 100px 20px;
    text-align: center;
 }
+/* login  */
+
+
+.login{
+    margin: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.login input{
+    display: block;
+    padding: 5px;
+    margin: 10px;
+    width: 400px;
+    font-size: 25px;
+}
+.login h1 {
+    color: green;
+}
+.login .LoginOr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.LoginOr p{
+    padding: 5px;
+}
+.login .LoginOr div{
+    margin-bottom: 10px;
+    width: 200px;
+    height: 1px;
+    background-color: rgb(165, 213, 255);
+}
+.login input[type=submit]{
+    border: none;
+    background-color: orange;
+    color: white;
+}
+.err{
+    background-color: rgb(255, 170, 170);
+    border: 1px solid red;
+}
+.success{
+    background-color: rgb(163, 235, 163);
+    border: 1px solid green;
+}
+
 
 footer {
     margin: 50px;
@@ -102,7 +152,6 @@ footer >p{
 }
 .subscribe input[type=email]{
     border-radius: 10px 0 0 10px;
-    background-color: rgb(197, 197, 197);
     width: 250px;
     padding: 10px;
     font-size: 23px;
