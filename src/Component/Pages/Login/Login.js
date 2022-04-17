@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import { useAuthState, useCreateUserWithEmailAndPassword, useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
-import { useNavigate } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { Google } from 'react-bootstrap-icons';
+import Loading from '../Loading/Loading';
 
 
 const Login = () => {
+    const loaction = useLocation()
+    const from = loaction.state?.from?.pathname || '/'
+    console.log(from)
     const [register, setRegister] = useState(true)
     const [target, setTarget] = useState(true)
     const navigate = useNavigate()
@@ -50,10 +54,10 @@ const Login = () => {
     }
     [user, loading] = useAuthState(auth)
     if (loading) {
-        return <p>Loading...</p>;
+        return <Loading></Loading>
     }
     if (user) {
-        navigate('/')
+        navigate(from)
     }
 
     // for sign in other option 
@@ -88,7 +92,7 @@ const Login = () => {
             </div>
             {/* for google /github */}
             <div>
-                <button style={{width:'400px',fontSize:'25px'}} className='btn btn-info' onClick={()=>signInWithGoogle()}><FontAwesomeIcon icon={'google'}></FontAwesomeIcon> {option} with Google</button>
+                <button style={{width:'400px',fontSize:'25px'}} className='btn btn-info' onClick={()=>signInWithGoogle()}><Google/> {option} with Google</button>
             </div>
             
             <div className='d-flex align-items-center'>

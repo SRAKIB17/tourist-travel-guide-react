@@ -1,9 +1,10 @@
 import React from 'react';
+import { Spinner } from 'react-bootstrap';
 
 const Loading = () => {
     return (
-        <div>
-            page loading
+        <div style={{marginTop:'100px'}}>
+            <Spinner/>
         </div>
     );
 };

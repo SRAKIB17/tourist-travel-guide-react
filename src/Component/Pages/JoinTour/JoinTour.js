@@ -42,8 +42,6 @@ const JoinTour = () => {
     if(loading){
         return <Loading></Loading>
     }
-
-
     return (
         <div className='cartJoin '>
             <div className='mb-3 cardBody w-100 h-100 tourJoin'>

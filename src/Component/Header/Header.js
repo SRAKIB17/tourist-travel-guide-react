@@ -8,12 +8,6 @@ import logo from '../../images/logo.svg'
 import './Header.css'
 const Header = () => {
     const [user, loading] = useAuthState(auth)
-    if(loading){
-        return 
-        <div>
-            
-        </div>
-    }
 
     return (
         <div style={{fontSize:"30px"}}>
