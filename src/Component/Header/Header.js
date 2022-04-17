@@ -10,7 +10,7 @@ const Header = () => {
     const [user, loading] = useAuthState(auth)
 
     return (
-        <div style={{fontSize:"30px"}}>
+        <header style={{fontSize:"30px"}} className='headerSection'>
             <Navbar bg="white" expand="lg" fixed="top">
                 <Container>
                     <Navbar.Brand as={Link} to="/home"><img src={logo} alt="" /></Navbar.Brand>
@@ -20,7 +20,7 @@ const Header = () => {
                             <Nav.Link as={Link} to="/home">Home</Nav.Link>
                             <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
                             <Nav.Link as={Link} to="/about">About</Nav.Link>
-                            <Nav.Link as={Link} to="/categories">Categories</Nav.Link>
+                          
                             {
                                 user? <button onClick={()=>signOut(auth)} className='btn' style={{fontSize:'25px'}}>Sign Out</button>: <Nav.Link as={Link} to='/login'>Login</Nav.Link>
                             }
@@ -30,7 +30,7 @@ const Header = () => {
                 </Container>
             </Navbar>
             
-        </div>
+        </header>
 
     );
 };

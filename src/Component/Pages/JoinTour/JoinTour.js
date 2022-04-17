@@ -56,7 +56,7 @@ const JoinTour = () => {
                     </div>
                 </div>
                 <p style={{ fontSize: '25px' }}>{tour + ',' + loacation}</p>
-                <img src={img} alt="" />
+                <img src={img} alt="" style={{width:'100%'}} />
                 <h4> Total Cost: <span style={{ color: 'orange' }}>{cart}</span></h4>
                 <h5>Last Date: {lastDate}</h5>
                 <h5>Tour Date: {tourDate}</h5>

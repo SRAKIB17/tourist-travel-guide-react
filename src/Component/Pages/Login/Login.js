@@ -5,6 +5,8 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { Github, Google } from 'react-bootstrap-icons';
 import Loading from '../Loading/Loading';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const loaction = useLocation()
@@ -59,6 +61,9 @@ const Login = () => {
     if (loading) {
         return <Loading></Loading>
     }
+
+    // for error message 
+
     let errMsg = ''
     if((error||error1)||(error2||error3)||error4){
         errMsg = error?.message || error1?.message || error2?.message ||error3?.message ||error4?.message
@@ -75,18 +80,23 @@ const Login = () => {
     else {
         option = 'Sign up';
     }
-    const resetPass = (event) => {
+    const resetPass = async (event) => {
         const email = emailRef.current.value;
-        sendPasswordResetEmail(email)
+        await sendPasswordResetEmail(email)
+        .then(()=>toast('send link on email'))
         
     }
     return (
         <div className='login'>
+            {/* ********************* title *********************** */}
             <title>{resetTarget? 'Reset Password' :register?'Login':'Register'}</title>
+            {/* **********************login or signup reset password ********************** */}
             {
                 resetTarget ? <h1>Reset Password</h1> : <h1>Please {register ? 'Login' : 'Sign Up'}</h1>
             }
             <p>{errMsg===''|| errMsg}</p>
+
+            {/*********************** user form ******************/}
             <form onSubmit={formSubmitHandler}>
                 {
                     register || <input type="text" name="name" id="" placeholder='Name' />
@@ -102,32 +112,32 @@ const Login = () => {
             </form>
 
 
-            {/* reset button  */}
+            {/**********************  reset button  *************************/}
             {
                 resetTarget&&<button disabled={target} style={{ width: '400px', fontSize: '25px' }} className='btn btn-warning m-1 text-light' onClick={resetPass}>Reset Password</button>
             }
 
-            {/* forget password  */}
+            {/*************************** forget password  *************************/}
             {resetTarget || register && <p className='h5 mx-4'>Forget password <button className='btn' style={{ fontSize: '20px' }} onClick={() => {
                 setResetTarget(!resetTarget)
                 errMsg = ''
                 }}>Reset Password</button></p>}
 
-            {/* or  */}
+            {/************************  or  ***********************/}
             <div className='LoginOr'>
                 <div></div>
                 <p>Or</p>
                 <div></div>
             </div>
 
-            {/* for google /github */}
+            {/***************  for google /github 8************************/}
             {resetTarget || <div>
                 <button style={{ width: '400px', fontSize: '25px' }} className='btn btn-info m-1 text-light' onClick={() => signInWithGoogle()}><Google /> {option} with Google</button>
                 <br />
                 <button style={{ width: '400px', fontSize: '25px' }} className='btn btn-warning m-1 text-light' onClick={() => signInWithGithub()}><Github />{option} with GitHub</button>
             </div>}
 
-            {/* register  */}
+            {/******************************* register  **********************/}
             <div className='d-flex align-items-center'>
                 <p className='h5'>{register ? 'New User? ' : 'Already have an account'}<button className='btn ' style={{ fontSize: '25px' }} onClick={() => {
                     setRegister(!register)
@@ -136,6 +146,7 @@ const Login = () => {
                     
                 }}>{register ? 'Create a new account' : 'Login'}</button></p>
             </div>
+            <ToastContainer />
         </div>
     );
 };

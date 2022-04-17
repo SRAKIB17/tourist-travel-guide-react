@@ -15,7 +15,7 @@ const Home = () => {
             <Featured/>
             
             <Tours></Tours>
-            <AppsDownload/>
+            
         </div>
     );
 };

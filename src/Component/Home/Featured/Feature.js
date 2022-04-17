@@ -8,7 +8,7 @@ const Feature = ({ feature: { image, name, number, address, rating } }) => {
     const img = images(`./${image}`);
 
     return (
-        <div className='col-4 cardFeature'>
+        <div className='col-lg-4 col-md-4 col-sm-6 cardFeature'>
             <img src={img} alt="" className='mt-3' />
             <div className='mb-3 cardBody w-100 '>
                 <h2>{name}</h2>

@@ -144,11 +144,49 @@ body{
     background-color: rgb(209, 234, 234);
 }
 
-footer {
-    margin: 50px;
+/* for apps download / */
+.appsDownload{
+    padding: 100px;
+    color: white;
+}
+.appLogo{
+    position: absolute;
+    z-index: 20;
+    top: 200px;
+    left: 100px;
+}
+.appLogo a img{
+    margin: 4px;
+}
+@media screen and (max-width:500px){
+    .appLogo{
+        position: absolute;
+        z-index: 20;
+        top: 150px;
+        left: 70px;
+        right: 4px;
+    }
+    * img {
+        width: 100%;
+    }
+    .appsDownload{
+        padding: 5px;
+    }
+    footer > div{
+        flex-direction: column;
+    }
+    .subscribe{
+        margin: 20px;
+    }
+}
+/* for footer */
+footer{
+    margin: 50px 5px;
     font-family: 'Poppins', sans-serif;
 }
-footer >div{
+footer >.footerIn{
+    margin: 20px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -161,6 +199,7 @@ footer >p{
     border: none;
 }
 .subscribe {
+    
     display: flex;
     align-items: center;
 }
