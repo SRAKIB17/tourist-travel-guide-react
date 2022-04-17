@@ -9,7 +9,7 @@ const Tour = ({tour:{id,cart, discription,image,lastDate,loacation,tour,tourDate
     const img = images(`./${image}`);
     const navigate = useNavigate()
     return (
-        <div className='col-lg-4 col-md-4 col-sm-6 cardFeature'>
+        <div className='col-lg-4 col-md-6 col-sm-6 cardFeature'>
             
             <div className='mb-3 cardBody w-100 h-100 tourJoin'>
                 <p style={{fontSize:'25px'}}>{tour+','+loacation}</p>

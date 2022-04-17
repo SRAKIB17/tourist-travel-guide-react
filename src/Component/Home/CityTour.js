@@ -20,29 +20,29 @@ const CityTour = () => {
 
             <h2 className='text-center'>Popular Cities Travel - 2022</h2>
             <div className='row'>
-                <div className='col-md-6 col-lg-6 col-sm-12'>
+                <div className='col-md-12 col-lg-6 col-sm-12'>
                     <img src={city1} alt="" />
                     <h3>New Yourk</h3>
                 </div>
-                <div className='col-lg-3 col-md-3 col-sm-6'>
+                <div className='col-lg-3 col-md-6 col-sm-6'>
                     <img src={city2} alt="" />
                     <h3>Paris</h3>
                 </div>
-                <div className='col-lg-3 col-md-3 col-sm-6'>
+                <div className='col-lg-3 col-md-6 col-sm-6'>
                     <img src={city3} alt="" />
                     <h3>London</h3>
                 </div>
             </div>
             <div className='row '>
-                <div className='col-lg-3 col-md-3 col-sm-6'>
+                <div className='col-lg-3 col-md-6 col-sm-6'>
                     <img src={city4} alt="" />
                     <h3>Bangkok</h3>
                 </div>
-                <div className='col-lg-3 col-md-3 col-sm-6'>
+                <div className='col-lg-3 col-md-6 col-sm-6'>
                     <img src={city5} alt="" />
                     <h3>Dubai</h3>
                 </div>
-                <div className='col-lg-6 col-md-6 col-sm-12'>
+                <div className='col-lg-6 col-md-12 col-sm-12'>
                     <img src={city6} alt="" />
                     <h3>Singapur</h3>
                 </div>
