@@ -82,6 +82,7 @@ const Login = () => {
     }
     return (
         <div className='login'>
+            <title>{resetTarget? 'Reset Password' :register?'Login':'Register'}</title>
             {
                 resetTarget ? <h1>Reset Password</h1> : <h1>Please {register ? 'Login' : 'Sign Up'}</h1>
             }

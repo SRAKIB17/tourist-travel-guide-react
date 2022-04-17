@@ -40,10 +40,11 @@
     background-color: rgb(11, 165, 216);
 
 }
-.
+
 .Explore{
     font-family: 'Poppins', sans-serif;
     text-align: justify;
+    font-size: 20px;
 }
 .Explore::first-letter{ 
     font-family: 'Poppins', sans-serif;

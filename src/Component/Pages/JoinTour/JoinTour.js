@@ -44,6 +44,7 @@ const JoinTour = () => {
     }
     return (
         <div className='cartJoin '>
+            <title>{tour+', ' +loacation} Travel</title>
             <div className='mb-3 cardBody w-100 h-100 tourJoin'>
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '10px 0 0 0' }}>
                     <div style={{ border: '1px solid #C9E1F9', width: '100px' }}>

@@ -3,7 +3,7 @@ import React from 'react';
 const Blog = () => {
     return (
         <div style={{ marginTop: '100px' }} className="mx-4">
-
+            <title>Blog</title>
             <div className='blogq-1'>
                 <h3 className='text-center'> Q1. Difference between authorization and authentication </h3>
                 <table className='table table-hover' >

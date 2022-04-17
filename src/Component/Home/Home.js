@@ -9,6 +9,7 @@ import Tour from './Tours/Tours';
 const Home = () => {
     return (
         <div className='home'>
+            <title>Safe Adventure , Enjoy life</title>
             <CarouselImg/>  
             <CityTour/>
             <Featured/>
